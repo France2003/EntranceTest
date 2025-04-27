@@ -10,7 +10,7 @@ interface CirclePosition {
     left: number;
     top: number;
 }
-const GameBoard: React.FC<GameBoardProps> = ({ points, currentCircle, handleOnClickCicle, gameStatus, gameStart }) => {
+const GameBoard: React.FC<GameBoardProps> = ({ points, handleOnClickCicle, gameStatus, gameStart }) => {
     const [positions, setPositions] = useState<CirclePosition[]>([]);
     const [clickedCircles, setClickedCircles] = useState<number[]>([]);
     const [showCircles, setShowCircles] = useState(false);
